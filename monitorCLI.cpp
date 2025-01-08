@@ -12,11 +12,12 @@ int main() {
 
   //deviceMG.loadTestDevice();
 
-  deviceMG.loadDevices();
+  if(!deviceMG.loadDevices()){
+  	cout<< "Devices not loaded correctly terminating ..." << endl;
+  	return 1;
+  }
 
   deviceMG.printDevices();
-
-
 
   return 0;
 }

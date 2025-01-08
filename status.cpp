@@ -12,7 +12,7 @@ private:
 		LOADING
 	};
 
-	string statusNames[3] = {"online","offline","loading..."};
+	string statusNames[3] = {"\033[0;32monline\033[0m","\033[0;31moffline\033[0m","\033[0;33mloading...\033[0m"};
 
 
 	enum statusEnum currentStatus = LOADING;
